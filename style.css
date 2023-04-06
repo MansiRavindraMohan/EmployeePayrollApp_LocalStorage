@@ -1,4 +1,4 @@
-body {
+html body {
     margin: 0;
     height: 100%;
 }
@@ -25,7 +25,7 @@ body {
 }
 
 .logo-content-img {
-    border: 0px solid #42515f;
+    border: solid 0px #42515f;
 }
 
 .emp-text {
@@ -33,18 +33,19 @@ body {
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
     color: #82a70c;
-    padding-left: 10px;
     text-transform: capitalize;
 }
 
 .emp-payroll {
     color: #42515f;
+
 }
 
 * {
     box-sizing: border-box;
 }
 
+/*UC 2*/
 .form-content {
     min-height: calc(100% - 80px);
     background-color: #f7f7f7;
@@ -59,6 +60,7 @@ body {
     padding: 44px 60px;
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #f5f5f5;
+    border: 1px solid #f5f5f5;
     border-radius: 8px;
     opacity: 1;
 }
@@ -77,6 +79,7 @@ body {
     flex-direction: column;
     margin-bottom: 10px;
     align-items: stretch;
+    ;
     border: 0px solid green;
 }
 
@@ -96,12 +99,6 @@ label {
     font-family: Roboto;
 }
 
-error-output {
-    font-size: 12px;
-    font-style: italic;
-    color: red;
-}
-
 .input {
     width: 100%;
     padding: 12px;
@@ -110,13 +107,14 @@ error-output {
     resize: vertical;
 }
 
+/*UC 3*/
 .profie-radio-content {
     display: flex;
     flex-direction: row;
 }
 
 .profile-radio-content>label {
-    /* display: flex; */
+    /*display: flex; */
     flex-direction: row;
     align-items: center;
 }
@@ -127,11 +125,7 @@ error-output {
     margin-left: 12px;
 }
 
-lable {
-    padding: 12px 12px 12px 0px;
-    display: inline-block;
-}
-
+/*UC 5*/
 select {
     padding: 12px;
     border: 1px solid#ccc;
@@ -143,6 +137,7 @@ select {
     background-color: transparent;
 }
 
+/*UC 6*/
 .buttonParent {
     display: flex;
     margin-bottom: 10px;
@@ -176,6 +171,14 @@ select {
 .cancelButton {
     text-decoration: none;
     text-align: center;
+}
+
+/*UC-UC 2 – On Document Load Set Event Listeners*/
+error-output {
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
 }
 
 @media only screen and (max-width: 960px) {
@@ -223,5 +226,4 @@ select {
         flex-direction: column-reverse;
         align-items: flex-start;
     }
-
 }
